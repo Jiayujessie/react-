@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
-import './view/index.css';
 import MainHeader from './view/user/main-header';
 import MainFooter from './view/user/main-footer';
-
+import './view/index.css';
 
 class App extends Component{
   render(){
     return<div className="pageWrap">
-aaa
+      <MainHeader/>
+      <div>身体</div>
+      <MainFooter/>
     </div>;
   }
 }

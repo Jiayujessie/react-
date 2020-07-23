@@ -1,5 +1,28 @@
 .pageWrap {
     /* 最小全屏的高度 */
     min-height: 100vh;
- 
+    margin: 0 auto;
+}
+#logo {
+    color: pink;
+    text-align: center;
+    margin-bottom: 0;
+}
+.wrap{
+    max-width: 980px;
+}
+
+.headerDivider{
+    height: 44px;
+    margin: 10px;
+}
+#nav{
+    float: left;
+    margin-left: 30px;
+}
+.xsNav {
+    position: absolute;
+    right: 0px;
+    top: opx;
+    width: auto;    
 }

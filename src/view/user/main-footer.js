@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
 
-class MainHeader extends Component {
+export default class MainFooter extends Component {
     render(){
-        return "底部";
+        return ("底部"
+       
+        
+        );
     }
 }
+
