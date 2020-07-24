@@ -29,7 +29,11 @@ export default class MainHeader extends Component {
                         id = "xsNav"
                         mode = "vertical"
                         />
-                    }>
+                    }
+                    trigger = {["click","touchend"]}
+                    placement = "bottomRight "
+
+                    >
                         <Button><MenuFoldOutlined /></Button>
                     </Dropdown>
                 </Col>

@@ -7,7 +7,7 @@ class App extends Component{
   render(){
     return<div className="pageWrap">
       <MainHeader/>
-      <div>身体</div>
+      <main className="main">身体</main>
       <MainFooter/>
     </div>;
   }
