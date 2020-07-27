@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {Link} from "react-router-dom";
 import {Menu, Row, Col} from "antd";
-import {indexMenu} from "./indexMenu";
+import IndexMenu from "./indexMenu";
 //首页视图
 let arr = [];
 for(let i = 0; i < 100; i++){
@@ -13,48 +13,16 @@ class Index extends Component{
         return (
             <Row className="wrap">
                 <Col md={6} xs={0} className="indexSider">
-                    <Menu id="indexMenu">
-                        <Menu.Item>
-                            <Link to="/index/all">全部</Link>
-                        </Menu.Item>
-                        <Menu.Item>
-                            <Link to="/index/good">精华 </Link>
-                        </Menu.Item>
-                        <Menu.Item>
-                            <Link to="/index/ask">问题</Link>
-                        </Menu.Item>
-                        <Menu.Item>
-                            <Link to="/index/share">分享</Link>
-                        </Menu.Item>
-                        <Menu.Item>
-                            <Link to="/index/job">招聘</Link>
-                        </Menu.Item>
-                        <Menu.Item>
-                            <Link to="/index/dev">测试</Link>
-                        </Menu.Item>
-                    </Menu>
+                <IndexMenu
+                    id="indexMenu" 
+                    mode="vertical"
+                />   
                 </Col>
                 <Col md={0} xs={24} >
-                    <Menu id="indexXsMenu" mode="horizontal">
-                        <Menu.Item>
-                            <Link to="/index/all">全部</Link>
-                        </Menu.Item>
-                        <Menu.Item>
-                            <Link to="/index/good">精华 </Link>
-                        </Menu.Item>
-                        <Menu.Item>
-                            <Link to="/index/ask">问题</Link>
-                        </Menu.Item>
-                        <Menu.Item>
-                            <Link to="/index/share">分享</Link>
-                        </Menu.Item>
-                        <Menu.Item>
-                            <Link to="/index/job">招聘</Link>
-                        </Menu.Item>
-                        <Menu.Item>
-                            <Link to="/index/dev">测试</Link>
-                        </Menu.Item>
-                    </Menu>
+                    <IndexMenu
+                    id="indexXsMenu" 
+                    mode="horizontal"
+                    />                   
                 </Col>
                 <Col 
                 md={18}
