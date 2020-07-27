@@ -20,19 +20,16 @@ export default class MainHeader extends Component {
                     <Nav
                     id= "nav"
                     mode= "horizontal"
-                    />
+                    /> 
                     
                 </Col>
                 <Col md={0} xs={24} className="xsNav">
                     <Dropdown overlay={
                         <Nav
-                        id = "xsNav"
-                        mode = "vertical"
-                        />
-                    }
-                    trigger = {["click","touchend"]}
-                    placement = "bottomRight "
-
+                        id= "nav"
+                        mode= "vertical"
+                        />                         
+                        }
                     >
                         <Button><MenuFoldOutlined /></Button>
                     </Dropdown>

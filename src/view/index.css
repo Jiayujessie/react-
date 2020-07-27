@@ -6,6 +6,7 @@
     flex-direction: column;
 }
 .headerDivider{
+    float: left;
     height: 44px;
     margin: 10px;
 }
@@ -17,8 +18,6 @@
 .wrap{
     max-width: 980px;
 }
-
-
 #nav{
     float: left;
     margin-left: 30px;
@@ -31,4 +30,32 @@
 }
 .main{
     flex:1;
+}
+.main .wrap{
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+#indexMenu .ant-menu-item-selected{
+    border-right: 10px solid #1890ff ;
+}
+#indexMenu li:hover{
+    background-color:pink;
+}
+#indexMenu li{
+    margin-right: -1px;
+    text-align: center;
+}
+#indexMenu {
+    border-right: none;
+}
+.indexList{
+    border-left: 1px solid #ccc;
+}
+.indexSider{
+    border-right: 1px solid #ccc;
+    padding-bottom: 9999px;
+    margin-bottom: -9999px;
+}
+.indexXSMenu li{
+    flex: 1;
 }
