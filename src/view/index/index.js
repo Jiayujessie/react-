@@ -4,13 +4,10 @@ import {Menu, Row, Col} from "antd";
 import IndexMenu from "./indexMenu";
 import IndexList from "./list"; 
 //首页视图
-let arr = [];
-for(let i = 0; i < 100; i++){
-arr.push(<li>这是第{i}行</li>)
-}
 
 class Index extends Component{
     render(){
+        console.log(this.props);
         return (
             <Row className="wrap">
                 <Col md={6} xs={0} className="indexSider">
@@ -26,13 +23,12 @@ class Index extends Component{
                     />                   
                 </Col>
                 <Col 
-                md={18}
+                md={18} 
                 xs={24} 
                 className="indexList"
                 >
-                    {arr}
+                    <IndexList/>
                 </Col>
-                <IndexList/>
             </Row>
         )
     };
