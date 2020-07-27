@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {Link} from "react-router-dom";
 import {Menu, Row, Col} from "antd";
 import IndexMenu from "./indexMenu";
+import IndexList from "./list"; 
 //首页视图
 let arr = [];
 for(let i = 0; i < 100; i++){
@@ -16,7 +17,7 @@ class Index extends Component{
                 <IndexMenu
                     id="indexMenu" 
                     mode="vertical"
-                />   
+                />    
                 </Col>
                 <Col md={0} xs={24} >
                     <IndexMenu
@@ -31,6 +32,7 @@ class Index extends Component{
                 >
                     {arr}
                 </Col>
+                <IndexList/>
             </Row>
         )
     };
