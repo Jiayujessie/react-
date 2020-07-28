@@ -19,6 +19,7 @@
                       "回复: "+item.reply_count,
                       "访问: "+item.visit_count
                     ]}
+                    key={item.id}
                   >
 
                   <List.Item.Meta
