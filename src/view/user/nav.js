@@ -9,7 +9,7 @@ export default class Nav extends Component{
         return(
             <Menu id ={id} theme ="dark" mode = {mode}> 
                 <Menu.Item>
-                    <Link to="/index">
+                    <Link to="/index/all">
                         <StarOutlined />
                         <StarFilled />
                         <StarTwoTone twoToneColor="#eb2f96" />
