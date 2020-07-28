@@ -2,7 +2,7 @@
  import{List, Avatar} from "antd";
  import data from "./data"; 
  import {Link} from "react-router-dom";
- import { UserOutlined } from '@ant-design/icons';
+ import TexTag from "./texTag";
 
  export default class IndexList extends Component{
      render(){
@@ -11,12 +11,29 @@
              <List
               loading = {false}
               dataSource = {data.data}
-              renderItem = {item=>(<List.Item>
+
+              renderItem = {
+                  item =>(
+                  <List.Item
+                  actions = {[
+                      "回复: "+item.reply_count,
+                      "访问: "+item.visit_count
+                    ]}
+                  >
+
                   <List.Item.Meta
                     avatar = {<Avatar src= {item.author.avatar_url} />}
-                    title = {item.title}
-                     
-                    /* title = {<Link to {"/details/"+item.id}>{item.title}</Link>} */
+
+                    title =  {
+                        <div>
+                            <TexTag data = {item }/>
+
+                            <Link to = {"details"+item.id}>
+                            {item.title}
+                            </Link>
+                        </div>
+                    }
+
                     description={(
                         <p>
                             <Link to={"/user/"+item.author.loginname}>
