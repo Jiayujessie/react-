@@ -6,7 +6,6 @@
 
  export default class IndexList extends Component{
      render(){
-         console.log(data)
          return(
              <List
               loading = {false}
@@ -29,7 +28,7 @@
                         <div>
                             <TexTag data = {item }/>
 
-                            <Link to = {"details"+item.id}>
+                            <Link to = {"/details/"+item.id}>
                             {item.title}
                             </Link>
                         </div>
