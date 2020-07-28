@@ -14,7 +14,7 @@
               renderItem = {item=>(<List.Item>
                   <List.Item.Meta
                     avatar = {<Avatar src= {item.author.avatar_url} />}
-                    title = {<h3>{item.title}</h3>}
+                    title = {item.title}
                      
                     /* title = {<Link to {"/details/"+item.id}>{item.title}</Link>} */
                     description={(
@@ -22,7 +22,8 @@
                             <Link to={"/user/"+item.author.loginname}>
                                 {item.author.loginname}
                             </Link>
-                        </p>
+                            发表于：{item.create_at.split("T")[0]}
+                        </p>   
                     )} 
                   /> 
               </List.Item>)}
